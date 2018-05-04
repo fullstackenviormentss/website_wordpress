@@ -1,0 +1,59 @@
+.btn-get {
+  background: #d700d0;
+  color: white;
+  font-size: calculaterem(15px);
+  padding-top: calculaterem(13px);
+  padding-left: calculaterem(32px);
+  padding-right: calculaterem(32px);
+  padding-bottom: calculaterem(13px);
+  text-transform: uppercase;
+  border-radius: calculaterem(100px);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+
+  &:hover {
+    background: #0012b9;
+    color: white;
+  }
+
+  @include media-breakpoint-between(xs,sm) {
+    font-size: 0.8rem;
+    padding-left: calculaterem(22px);
+    padding-right: calculaterem(22px);
+  }
+
+  @include media-breakpoint-between(sm,lg) {
+    font-size: 0.8rem;
+  }
+}
+
+.btn-outline-git {
+  background: transparent;
+  border-color: black;
+  color: black;
+  font-size: calculaterem(15px);
+  padding-top: calculaterem(13px);
+  padding-left: calculaterem(56px);
+  padding-right: calculaterem(56px);
+  padding-bottom: calculaterem(13px);
+  text-transform: uppercase;
+  border-radius: calculaterem(100px);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  margin-left: calculaterem(15px);
+
+  &:hover {
+    background: #000;
+    color: white;
+  }
+
+  @include media-breakpoint-between(xs,sm) {
+    font-size: 0.8rem;
+    padding-left: calculaterem(48px);
+    padding-right: calculaterem(48px);
+  }
+
+  @include media-breakpoint-between(sm,lg) {
+    width: 165px;
+  }
+}

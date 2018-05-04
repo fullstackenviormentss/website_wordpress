@@ -1,0 +1,31 @@
+header {
+  padding-top: calculaterem(35px);
+  padding-bottom: calculaterem(35px);
+
+  @include media-breakpoint-between(xs, sm) {
+    padding-bottom: calculaterem(15px);
+  }
+}
+
+.hellobar-banner {
+  width: 100%;
+  text-align: center;
+  padding-top: calculaterem(10px);
+  padding-left: calculaterem(10px);
+  padding-right: calculaterem(10px);
+  padding-bottom: calculaterem(10px);
+  background-image: linear-gradient(150deg, #5918d8 0%, #310784  75%);
+  color: #fff;
+  font-size: calculaterem(16px);
+  font-weight: 700;
+
+  a {
+    color: white;
+    padding-bottom: calculaterem(1px);
+
+    &:hover {
+      text-decoration: none;
+      border-bottom: calculaterem(1px) solid white;
+    }
+  }
+}
